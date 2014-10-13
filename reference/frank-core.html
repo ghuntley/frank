@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
     <title>Core - Frank</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Ryan Riley">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="Ryan Riley"/>
 
-    <script src="http://code.jquery.com/jquery-1.8.0.js"></script>
-    <script src="http://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet"/>
 
     <link type="text/css" rel="stylesheet" href="/content/style.css" />
     <script type="text/javascript" src="/content/tips.js"></script>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
@@ -40,23 +40,6 @@
 </div>
 
 <!-- Render nested types and modules, if there are any -->
-  <h2>Nested types and modules</h2>
-  <div>
-      <table class="table table-bordered type-list">
-    <thead>
-      <tr><td>Type</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td class="type-name">
-            <a href="frank-core-httpresponseheadersbuilder.html">HttpResponseHeadersBuilder</a>
-          </td>
-          <td class="xmldoc"></td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
 
   <h3>Functions and values</h3>
   <table class="table table-bordered member-list">
@@ -67,655 +50,821 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '15', 15)" onmouseover="showTip(event, '15', 15)">
+          <code onmouseout="hideTip(event, '1', 1)" onmouseover="showTip(event, '1', 1)">
             ( 405 Method Not Allowed ) (...)
           </code>
-          <div class="tip" id="15">
-            <strong>Signature:</strong>allowedMethods:seq&lt;HttpMethod&gt; -&gt; HttpRequestMessage -&gt; Async&lt;HttpResponseMessage&gt;<br />
+          <div class="tip" id="1">
+            <strong>Signature:</strong> allowedMethods:seq&lt;HttpMethod&gt; -&gt; HttpApplication<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L191-191" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>In some instances, you need to respond with a <code>405 Message Not Allowed</code> response.
+The HTTP spec requires that this message include an <code>Allow</code> header with the allowed
+HTTP methods.</p>
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '3', 3)" onmouseover="showTip(event, '3', 3)">
+            ( 406 Not Acceptable ) 
+          </code>
+          <div class="tip" id="3">
+            <strong>Signature:</strong> HttpApplication<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L197-197" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '4', 4)" onmouseover="showTip(event, '4', 4)">
+            ( Accept-Ranges ) x response
+          </code>
+          <div class="tip" id="4">
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L116-116" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5', 5)" onmouseover="showTip(event, '5', 5)">
+            ( Cache-Control ) x response
+          </code>
+          <div class="tip" id="5">
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L97-97" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6', 6)" onmouseover="showTip(event, '6', 6)">
+            ( Content-Disposition ) x response
+          </code>
+          <div class="tip" id="6">
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L137-137" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '7', 7)" onmouseover="showTip(event, '7', 7)">
+            ( Content-Encoding ) x response
+          </code>
+          <div class="tip" id="7">
+            <strong>Signature:</strong> x:seq&lt;string&gt; -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L140-140" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '8', 8)" onmouseover="showTip(event, '8', 8)">
+            ( Content-Language ) x response
+          </code>
+          <div class="tip" id="8">
+            <strong>Signature:</strong> x:seq&lt;string&gt; -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L143-143" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '9', 9)" onmouseover="showTip(event, '9', 9)">
+            ( Content-Length ) x response
+          </code>
+          <div class="tip" id="9">
+            <strong>Signature:</strong> x:int64 -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L146-146" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '10', 10)" onmouseover="showTip(event, '10', 10)">
+            ( Content-Location ) x response
+          </code>
+          <div class="tip" id="10">
+            <strong>Signature:</strong> x:Uri -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L149-149" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '11', 11)" onmouseover="showTip(event, '11', 11)">
+            ( Content-MD5 ) x response
+          </code>
+          <div class="tip" id="11">
+            <strong>Signature:</strong> x:byte [] -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L152-152" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '12', 12)" onmouseover="showTip(event, '12', 12)">
+            ( Content-Range ) (...)
+          </code>
+          <div class="tip" id="12">
+            <strong>Signature:</strong> from:int64 -&gt; _to:int64 -&gt; length:int64 -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L155-155" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '13', 13)" onmouseover="showTip(event, '13', 13)">
+            ( Content-Type ) x response
+          </code>
+          <div class="tip" id="13">
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L158-158" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '14', 14)" onmouseover="showTip(event, '14', 14)">
+            ( Last Modified ) x response
+          </code>
+          <div class="tip" id="14">
+            <strong>Signature:</strong> x:DateTimeOffset -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L167-167" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '15', 15)" onmouseover="showTip(event, '15', 15)">
+            ( Proxy-Authenticate ) x response
+          </code>
+          <div class="tip" id="15">
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L122-122" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '16', 16)" onmouseover="showTip(event, '16', 16)">
-            ( 406 Not Acceptable ) request
+            ( Retry-After ) x response
           </code>
           <div class="tip" id="16">
-            <strong>Signature:</strong>request:HttpRequestMessage -&gt; Async&lt;HttpResponseMessage&gt;<br />
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L107-107" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '17', 17)" onmouseover="showTip(event, '17', 17)">
-            ( Accept-Ranges ) x response
+            ( Transfer-Encoding ) x response
           </code>
           <div class="tip" id="17">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L88-88" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '18', 18)" onmouseover="showTip(event, '18', 18)">
-            ( Cache-Control ) x response
+            ( WWW-Authenticate ) x response
           </code>
           <div class="tip" id="18">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L125-125" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '19', 19)" onmouseover="showTip(event, '19', 19)">
-            ( Content-Disposition ) x response
+            Age x response
           </code>
           <div class="tip" id="19">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> x:TimeSpan -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L104-104" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '20', 20)" onmouseover="showTip(event, '20', 20)">
-            ( Content-Encoding ) x response
+            Allow allowedMethods response
           </code>
           <div class="tip" id="20">
-            <strong>Signature:</strong>x:seq&lt;string&gt; -&gt; response:HttpResponseMessage -&gt; unit<br />
-                      </div>
+            <strong>Signature:</strong> allowedMethods:&#39;?6160 -&gt; response:HttpResponseMessage -&gt; unit<br />
+                          <strong>Type parameters:</strong> '?6160          </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L129-129" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '21', 21)" onmouseover="showTip(event, '21', 21)">
-            ( Content-Language ) x response
+            Bytes bytes
           </code>
           <div class="tip" id="21">
-            <strong>Signature:</strong>x:seq&lt;string&gt; -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> bytes:byte [] -&gt; HttpContent<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L224-224" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '22', 22)" onmouseover="showTip(event, '22', 22)">
-            ( Content-Length ) x response
+            Connection x response
           </code>
           <div class="tip" id="22">
-            <strong>Signature:</strong>x:int64 -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L82-82" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '23', 23)" onmouseover="showTip(event, '23', 23)">
-            ( Content-Location ) x response
+            Date x response
           </code>
           <div class="tip" id="23">
-            <strong>Signature:</strong>x:Uri -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> x:DateTimeOffset -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L79-79" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '24', 24)" onmouseover="showTip(event, '24', 24)">
-            ( Content-MD5 ) x response
+            ETag tag isWeak response
           </code>
           <div class="tip" id="24">
-            <strong>Signature:</strong>x:byte [] -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> tag:string -&gt; isWeak:bool -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L161-161" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '25', 25)" onmouseover="showTip(event, '25', 25)">
-            ( Content-Range ) (...)
+            Expires x response
           </code>
           <div class="tip" id="25">
-            <strong>Signature:</strong>from:int64 -&gt; _to:int64 -&gt; length:int64 -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> x:DateTimeOffset -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L164-164" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '26', 26)" onmouseover="showTip(event, '26', 26)">
-            ( Content-Type ) x response
+            findFormatterFor mediaType formatters
           </code>
           <div class="tip" id="26">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> mediaType:string -&gt; formatters:seq&lt;MediaTypeFormatter&gt; -&gt; MediaTypeFormatter<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L202-202" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '27', 27)" onmouseover="showTip(event, '27', 27)">
-            ( Last Modified ) x response
+            Form pairs
           </code>
           <div class="tip" id="27">
-            <strong>Signature:</strong>x:DateTimeOffset -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> pairs:seq&lt;string * string&gt; -&gt; HttpContent<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L223-223" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '28', 28)" onmouseover="showTip(event, '28', 28)">
-            ( Proxy-Authenticate ) x response
+            Formatted (s, encoding, mediaType)
           </code>
           <div class="tip" id="28">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> (s:string * encoding:Encoding * mediaType:string) -&gt; HttpContent<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L222-222" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '29', 29)" onmouseover="showTip(event, '29', 29)">
-            ( Retry-After ) x response
+            formatWith mediaType formatter body
           </code>
           <div class="tip" id="29">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
-                      </div>
+            <strong>Signature:</strong> mediaType:string -&gt; formatter:MediaTypeFormatter -&gt; body:&#39;a -&gt; HttpContent<br />
+                          <strong>Type parameters:</strong> 'a          </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L217-217" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p><code>formatWith</code> allows you to specify a specific <code>formatter</code> with which to render a representation
+of your content body.
+The <code>Web API</code> tries to do this for you at this time, so this function is likely to be clobbered,
+or rather, wrapped again in another representation. Hopefully, this will get fixed in a future release.</p>
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '30', 30)" onmouseover="showTip(event, '30', 30)">
-            ( Transfer-Encoding ) x response
+            IO stream
           </code>
           <div class="tip" id="30">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> stream:Stream -&gt; HttpContent<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L220-220" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '31', 31)" onmouseover="showTip(event, '31', 31)">
-            ( WWW-Authenticate ) x response
+            Location x response
           </code>
           <div class="tip" id="31">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> x:Uri -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L134-134" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '32', 32)" onmouseover="showTip(event, '32', 32)">
-            Age x response
+            negotiateMediaType formatters arg2
           </code>
           <div class="tip" id="32">
-            <strong>Signature:</strong>x:TimeSpan -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> formatters:seq&lt;MediaTypeFormatter&gt; -&gt; HttpRequestMessage -&gt; string option<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L234-234" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '33', 33)" onmouseover="showTip(event, '33', 33)">
-            Allow allowedMethods response
+            OK headers content
           </code>
           <div class="tip" id="33">
-            <strong>Signature:</strong>allowedMethods:&#39;?4888 -&gt; response:HttpResponseMessage -&gt; unit<br />
-                          <strong>Type parameters:</strong> '?4888          </div>
+            <strong>Signature:</strong> headers:(HttpResponseMessage -&gt; unit) -&gt; content:&#39;?6174 option -&gt; HttpRequestMessage -&gt; HttpResponseMessage<br />
+                          <strong>Type parameters:</strong> '?6174          </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L171-171" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns a response message with status code <code>200 OK</code></p>
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '34', 34)" onmouseover="showTip(event, '34', 34)">
-            Bytes bytes
+            options allowedMethods
           </code>
           <div class="tip" id="34">
-            <strong>Signature:</strong>bytes:byte [] -&gt; HttpContent<br />
+            <strong>Signature:</strong> allowedMethods:seq&lt;HttpMethod&gt; -&gt; HttpApplication<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L185-185" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p><code>OPTIONS</code> responses should return the allowed methods, and this helper facilitates method calls.</p>
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '35', 35)" onmouseover="showTip(event, '35', 35)">
-            Connection x response
+            Pragma x response
           </code>
           <div class="tip" id="35">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L100-100" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '36', 36)" onmouseover="showTip(event, '36', 36)">
-            Date x response
+            resourceHandlerOrDefault methods handler
           </code>
           <div class="tip" id="36">
-            <strong>Signature:</strong>x:DateTimeOffset -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> methods:seq&lt;HttpMethod&gt; -&gt; handler:(HttpRequestMessage -&gt; Async&lt;HttpResponseMessage&gt; option) -&gt; HttpApplication<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L260-260" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Adds a default response of "405 Method Not Allowed" to a handler supporting the specified methods.</p>
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '37', 37)" onmouseover="showTip(event, '37', 37)">
-            ETag tag isWeak response
+            respond (...)
           </code>
           <div class="tip" id="37">
-            <strong>Signature:</strong>tag:string -&gt; isWeak:bool -&gt; response:HttpResponseMessage -&gt; unit<br />
-                      </div>
+            <strong>Signature:</strong> statusCode:HttpStatusCode -&gt; headers:(HttpResponseMessage -&gt; unit) -&gt; content:&#39;?6142 option -&gt; request:HttpRequestMessage -&gt; HttpResponseMessage<br />
+                          <strong>Type parameters:</strong> '?6142          </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L70-70" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '38', 38)" onmouseover="showTip(event, '38', 38)">
-            Expires x response
+            runConneg formatters f
           </code>
           <div class="tip" id="38">
-            <strong>Signature:</strong>x:DateTimeOffset -&gt; response:HttpResponseMessage -&gt; unit<br />
-                      </div>
+            <strong>Signature:</strong> formatters:seq&lt;MediaTypeFormatter&gt; -&gt; f:(HttpRequestMessage -&gt; Async&lt;&#39;?6189&gt;) -&gt; HttpApplication<br />
+                          <strong>Type parameters:</strong> '?6189          </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L243-243" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '39', 39)" onmouseover="showTip(event, '39', 39)">
-            findFormatterFor mediaType
+            Segment segment
           </code>
           <div class="tip" id="39">
-            <strong>Signature:</strong>mediaType:string -&gt; seq&lt;MediaTypeFormatter&gt; -&gt; MediaTypeFormatter<br />
+            <strong>Signature:</strong> segment:ArraySegment&lt;byte&gt; -&gt; HttpContent<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L225-225" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '40', 40)" onmouseover="showTip(event, '40', 40)">
-            Form pairs
+            Server x response
           </code>
           <div class="tip" id="40">
-            <strong>Signature:</strong>pairs:seq&lt;string * string&gt; -&gt; HttpContent<br />
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L110-110" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '41', 41)" onmouseover="showTip(event, '41', 41)">
-            Formatted (s, encoding, mediaType)
+            Str s
           </code>
           <div class="tip" id="41">
-            <strong>Signature:</strong>(s:string * encoding:Encoding * mediaType:string) -&gt; HttpContent<br />
+            <strong>Signature:</strong> s:string -&gt; HttpContent<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L221-221" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '42', 42)" onmouseover="showTip(event, '42', 42)">
-            formatWith mediaType formatter body
+            Trailer x response
           </code>
           <div class="tip" id="42">
-            <strong>Signature:</strong>mediaType:string -&gt; formatter:MediaTypeFormatter -&gt; body:&#39;?4910 -&gt; HttpContent<br />
-                          <strong>Type parameters:</strong> '?4910          </div>
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+                      </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L85-85" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '43', 43)" onmouseover="showTip(event, '43', 43)">
-            IO stream
+            Upgrade x response
           </code>
           <div class="tip" id="43">
-            <strong>Signature:</strong>stream:Stream -&gt; HttpContent<br />
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L91-91" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '44', 44)" onmouseover="showTip(event, '44', 44)">
-            Location x response
+            Vary x response
           </code>
           <div class="tip" id="44">
-            <strong>Signature:</strong>x:Uri -&gt; response:HttpResponseMessage -&gt; unit<br />
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L119-119" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '45', 45)" onmouseover="showTip(event, '45', 45)">
-            negotiateMediaType formatters request
+            Via x response
           </code>
           <div class="tip" id="45">
-            <strong>Signature:</strong>formatters:IEnumerable&lt;MediaTypeFormatter&gt; -&gt; request:HttpRequestMessage -&gt; string option<br />
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L94-94" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '46', 46)" onmouseover="showTip(event, '46', 46)">
-            OK headers content
-          </code>
-          <div class="tip" id="46">
-            <strong>Signature:</strong>headers:(HttpResponseMessage -&gt; unit) -&gt; content:&#39;?4902 option -&gt; HttpRequestMessage -&gt; HttpResponseMessage<br />
-                          <strong>Type parameters:</strong> '?4902          </div>
-        </td>
-        <td class="xmldoc">
-        
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '47', 47)" onmouseover="showTip(event, '47', 47)">
-            options allowedMethods
-          </code>
-          <div class="tip" id="47">
-            <strong>Signature:</strong>allowedMethods:seq&lt;HttpMethod&gt; -&gt; HttpRequestMessage -&gt; Async&lt;HttpResponseMessage&gt;<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '48', 48)" onmouseover="showTip(event, '48', 48)">
-            Pragma x response
-          </code>
-          <div class="tip" id="48">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '49', 49)" onmouseover="showTip(event, '49', 49)">
-            resourceHandlerOrDefault (...)
-          </code>
-          <div class="tip" id="49">
-            <strong>Signature:</strong>methods:seq&lt;HttpMethod&gt; -&gt; handler:(HttpRequestMessage -&gt; Async&lt;HttpResponseMessage&gt; option) -&gt; request:HttpRequestMessage -&gt; Async&lt;HttpResponseMessage&gt;<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>Adds a default response of "405 Method Not Allowed" to a handler supporting the specified methods.</p>
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '50', 50)" onmouseover="showTip(event, '50', 50)">
-            respond (...)
-          </code>
-          <div class="tip" id="50">
-            <strong>Signature:</strong>statusCode:HttpStatusCode -&gt; headers:(HttpResponseMessage -&gt; unit) -&gt; content:&#39;?4870 option -&gt; request:HttpRequestMessage -&gt; HttpResponseMessage<br />
-                          <strong>Type parameters:</strong> '?4870          </div>
-        </td>
-        <td class="xmldoc">
-        
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '51', 51)" onmouseover="showTip(event, '51', 51)">
-            runConneg formatters f
-          </code>
-          <div class="tip" id="51">
-            <strong>Signature:</strong>formatters:IEnumerable&lt;MediaTypeFormatter&gt; -&gt; f:(HttpRequestMessage -&gt; Async&lt;&#39;?4922&gt;) -&gt; HttpRequestMessage -&gt; Async&lt;HttpResponseMessage&gt;<br />
-                          <strong>Type parameters:</strong> '?4922          </div>
-        </td>
-        <td class="xmldoc">
-        
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '52', 52)" onmouseover="showTip(event, '52', 52)">
-            Segment segment
-          </code>
-          <div class="tip" id="52">
-            <strong>Signature:</strong>segment:ArraySegment&lt;byte&gt; -&gt; HttpContent<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '53', 53)" onmouseover="showTip(event, '53', 53)">
-            Server x response
-          </code>
-          <div class="tip" id="53">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '54', 54)" onmouseover="showTip(event, '54', 54)">
-            Str s
-          </code>
-          <div class="tip" id="54">
-            <strong>Signature:</strong>s:string -&gt; HttpContent<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '55', 55)" onmouseover="showTip(event, '55', 55)">
-            Trailer x response
-          </code>
-          <div class="tip" id="55">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '56', 56)" onmouseover="showTip(event, '56', 56)">
-            Upgrade x response
-          </code>
-          <div class="tip" id="56">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '57', 57)" onmouseover="showTip(event, '57', 57)">
-            Vary x response
-          </code>
-          <div class="tip" id="57">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '58', 58)" onmouseover="showTip(event, '58', 58)">
-            Via x response
-          </code>
-          <div class="tip" id="58">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '59', 59)" onmouseover="showTip(event, '59', 59)">
             Warning x response
           </code>
-          <div class="tip" id="59">
-            <strong>Signature:</strong>x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
+          <div class="tip" id="46">
+            <strong>Signature:</strong> x:string -&gt; response:HttpResponseMessage -&gt; unit<br />
                       </div>
         </td>
         <td class="xmldoc">
-        
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Type extensions</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Type extension</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '60', 60)" onmouseover="showTip(event, '60', 60)">
-            Empty
-          </code>
-          <div class="tip" id="60">
-            <strong>Signature:</strong>HttpContent<br />
-                      </div>
-        </td>
-        <td class="xmldoc">
-        <p>Returns an <code>EmptyContent</code>.</p>
-
+            <a href="https://github.com/frank-fs/frank/tree/master/src/Frank/Frank.fs#L113-113" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
     </tbody>
@@ -723,8 +872,8 @@
 
         </div>
         <div class="span3">
-          <img src="img/logo.png" alt="F# Project" style="width:150px;margin:10px" />  
-          <ul class="nav nav-list" id="menu">
+          <img src="/img/logo.png" alt="F# Project" style="width:150px;margin:10px" />  
+          <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
             <li class="nav-header">Frank</li>
             <li><a href="/index.html">Home page</a></li>
             <li class="divider"></li>
@@ -742,6 +891,7 @@
         </div>
       </div>
     </div>
-    <a href="http://github.com/frank-fs/frank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <a href="http://github.com/frank-fs/frank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
-</html>
+  </html>
+

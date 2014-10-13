@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
     <title>Frank
 </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A functional web application DSL for ASP.NET Web API">
-    <meta name="author" content="Ryan Riley">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="A functional web application DSL for ASP.NET Web API"/>
+    <meta name="author" content="Ryan Riley"/>
 
-    <script src="http://code.jquery.com/jquery-1.8.0.js"></script>
-    <script src="http://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet"/>
 
     <link type="text/css" rel="stylesheet" href="/content/style.css" />
     <script type="text/javascript" src="/content/tips.js"></script>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
@@ -59,9 +59,9 @@
 </pre>
 </td>
 <td class="snippet"><pre class="fssnip">
-<span class="k">let</span> <span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="i">helloWorld</span> <span onmouseout="hideTip(event, 'fs2', 2)" onmouseover="showTip(event, 'fs2', 2)" class="i">request</span> <span class="o">=</span>
-    <span onmouseout="hideTip(event, 'fs3', 3)" onmouseover="showTip(event, 'fs3', 3)" class="i">OK</span> <span onmouseout="hideTip(event, 'fs4', 4)" onmouseover="showTip(event, 'fs4', 4)" class="i">ignore</span> <span class="o">&lt;|</span> <span onmouseout="hideTip(event, 'fs5', 5)" onmouseover="showTip(event, 'fs5', 5)" class="i">Str</span> <span class="s">&quot;</span><span class="s">Hello</span><span class="s">,</span><span class="s"> </span><span class="s">world</span><span class="s">!</span><span class="s">&quot;</span>
-    <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs6', 6)" onmouseover="showTip(event, 'fs6', 6)" class="i">async</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs7', 7)" onmouseover="showTip(event, 'fs7', 7)" class="i">Return</span></pre>
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs5', 7)" onmouseover="showTip(event, 'fs5', 7)" class="i">helloWorld</span> <span onmouseout="hideTip(event, 'fs6', 8)" onmouseover="showTip(event, 'fs6', 8)" class="i">request</span> <span class="o">=</span>
+    <span onmouseout="hideTip(event, 'fs7', 9)" onmouseover="showTip(event, 'fs7', 9)" class="i">OK</span> <span onmouseout="hideTip(event, 'fs8', 10)" onmouseover="showTip(event, 'fs8', 10)" class="i">ignore</span> <span class="o">&lt;|</span> <span onmouseout="hideTip(event, 'fs9', 11)" onmouseover="showTip(event, 'fs9', 11)" class="i">Str</span> <span class="s">&quot;</span><span class="s">Hello</span><span class="s">,</span><span class="s"> </span><span class="s">world</span><span class="s">!</span><span class="s">&quot;</span>
+    <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs10', 12)" onmouseover="showTip(event, 'fs10', 12)" class="i">async</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs11', 13)" onmouseover="showTip(event, 'fs11', 13)" class="i">Return</span></pre>
 </td>
 </tr>
 </table>
@@ -82,18 +82,22 @@ also want to read <a href="https://github.com/frank-fs/frank/blob/master/README.
 redistribution for both commercial and non-commercial purposes. For more information see the 
 <a href="https://github.com/frank-fs/frank/blob/master/LICENSE.txt">License file</a> in the GitHub repository.</p>
 
-<div class="tip" id="fs1">val helloWorld : request:&#39;a -&gt; Async&lt;(#HttpRequestMessage -&gt; HttpResponseMessage)&gt;<br /><br />Full name: Index.helloWorld</div>
-<div class="tip" id="fs2">val request : &#39;a</div>
-<div class="tip" id="fs3">val OK : headers:(HttpResponseMessage -&gt; unit) -&gt; content:#HttpContent option -&gt; (HttpRequestMessage -&gt; HttpResponseMessage)<br /><br />Full name: Frank.Core.OK</div>
-<div class="tip" id="fs4">val ignore : value:&#39;T -&gt; unit<br /><br />Full name: Microsoft.FSharp.Core.Operators.ignore</div>
-<div class="tip" id="fs5">val Str : s:string -&gt; HttpContent<br /><br />Full name: Frank.Core.Str</div>
-<div class="tip" id="fs6">val async : AsyncBuilder<br /><br />Full name: Microsoft.FSharp.Core.ExtraTopLevelOperators.async</div>
-<div class="tip" id="fs7">member AsyncBuilder.Return : value:&#39;T -&gt; Async&lt;&#39;T&gt;</div>
+<div class="tip" id="fs1">namespace System</div>
+<div class="tip" id="fs2">namespace System.Net</div>
+<div class="tip" id="fs3">namespace System.Net.Http</div>
+<div class="tip" id="fs4">namespace Frank</div>
+<div class="tip" id="fs5">val helloWorld : request:&#39;a -&gt; Async&lt;(#HttpRequestMessage -&gt; HttpResponseMessage)&gt;<br /><br />Full name: Index.helloWorld</div>
+<div class="tip" id="fs6">val request : &#39;a</div>
+<div class="tip" id="fs7">val OK : headers:(HttpResponseMessage -&gt; unit) -&gt; content:#HttpContent option -&gt; (HttpRequestMessage -&gt; HttpResponseMessage)<br /><br />Full name: Frank.Core.OK</div>
+<div class="tip" id="fs8">val ignore : value:&#39;T -&gt; unit<br /><br />Full name: Microsoft.FSharp.Core.Operators.ignore</div>
+<div class="tip" id="fs9">val Str : s:string -&gt; HttpContent<br /><br />Full name: Frank.Core.Str</div>
+<div class="tip" id="fs10">val async : AsyncBuilder<br /><br />Full name: Microsoft.FSharp.Core.ExtraTopLevelOperators.async</div>
+<div class="tip" id="fs11">member AsyncBuilder.Return : value:&#39;T -&gt; Async&lt;&#39;T&gt;</div>
 
         </div>
         <div class="span3">
-          <img src="img/logo.png" alt="F# Project" style="width:150px;margin:10px" />  
-          <ul class="nav nav-list" id="menu">
+          <img src="/img/logo.png" alt="F# Project" style="width:150px;margin:10px" />  
+          <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
             <li class="nav-header">Frank</li>
             <li><a href="/index.html">Home page</a></li>
             <li class="divider"></li>
@@ -111,6 +115,7 @@ redistribution for both commercial and non-commercial purposes. For more informa
         </div>
       </div>
     </div>
-    <a href="http://github.com/frank-fs/frank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    <a href="http://github.com/frank-fs/frank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
-</html>
+  </html>
+
